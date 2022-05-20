@@ -1,0 +1,15 @@
+{
+    "name": "piter/phpmvc-framework",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jakub Belczyk",
+            "email": "9017270@student.zadkine.nl"
+        }
+    ],
+    "require": {}
+}
