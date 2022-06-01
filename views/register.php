@@ -1,5 +1,5 @@
 <h1>Create and account</h1>
-<?php $form = \app\core\form\Form::begin('', "post") ?>
+<?php $form = \app\core\form\Form::begin('', "POST") ?>
     <div class="row">
         <div class="col">
             <?php echo $form->field($model, 'firstname') ?>
