@@ -52,6 +52,13 @@ abstract class Model
                 {
                     $this->addError($attribute, self::RULE_MATCH, $rule);
                 }
+                if ($ruleName === self::RULE_UNIQUE)
+                {
+                    $className = $rule['class'];
+                    $uniqueAttr = $rule['attribute'] ?? $attribute;
+                    $tableName = $className::tableName();
+                    Application::$app->db->
+                }
             }
         }
         return empty($this->errors);
